@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+    <style>
+
+        .blog h1, .blog p{
+            color: #ccc;
+        }
+        body{
+            background-image: url("./recursos/Logos\ Register/background.jpg");
+        }
+    </style>
+    <header>
+        <div class="header-content">
+            <div class="header-info"> 
+                <a href="index.html">
+                <h1>MotorBlog</h1>
+                </a>
+            </div>
+            <form action="search.html" method="get" class="search-form">
+                <section class="user-menu">
+                    <img src="./recursos/Profile Picture/Marcianos Crew.jpg" alt="Avatar de Usuario" id="user-avatar">
+                    <div class="dropdown-menu" hidden>
+                        <ul>
+                            <li><a href="register.html">Registrarse</a></li>
+                            <li><a href="login.html">Iniciar sesión</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <label for="search" class="sr-only">Buscar:</label>
+                <input type="text" id="search" name="q" placeholder="Buscar en el blog...">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reviews.html">Reseñas</a></li>
+                <li><a href="stories.html">Historias</a></li>
+                <li><a href="guides.html">Guías</a></li>
+                <li><a href="events.html">Eventos</a></li>
+                <li><a href="./Cosas adicionales/about.html">Acerca de</a></li>
+                <li><a href="profile.html">Mi perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content-container">
+            <div class="blog">
+                <h1>Nuestras Últimas Entradas</h1>
+                <p>Explora nuestras más recientes publicaciones sobre motocicletas, desde reseñas de modelos hasta emocionantes aventuras y guías útiles.</p>
+            </div>
+            <section class="articles-container">
+                <article>
+                    <a href="post.html">
+                        <h3><strong>Reseña de la Ducati Panigale V4 2024</strong></h3>
+                        <p>Exploramos a fondo la Ducati Panigale V4 2024. Desde su impresionante diseño hasta su potencia en pista, descubre por qué esta moto está marcando tendencia. Lee nuestra reseña completa y conoce todos los detalles.</p>
+                        <img src="./recursos/Motos - Articles/ducati-panigale-2023.jpg" alt="Reseña de la Ducati Panigale V4 2024">
+                    </a>
+                </article>
+                
+                <article>
+                    <a href="post.html">
+                        <h3><strong>Aventura en las Montañas con la BMW R1250GS</strong></h3>
+                        <p>Únete a nosotros en una emocionante travesía con la BMW R1250GS. Relatamos nuestra experiencia en las montañas con esta moto legendaria, compartiendo fotos épicas y consejos para tu próxima aventura.</p>
+                        <img src="./recursos/Motos - Articles/bmw-2023.jpg" alt="Aventura en las Montañas con la BMW R1250GS">
+                    </a>
+                </article>
+                    
+                <article>
+                    <a href="post.html">
+                        <h3><strong>Guía de Mantenimiento Básico para Tu Kawasaki Ninja ZX-6R</strong></h3>
+                        <p>¿Cómo mantener tu Kawasaki Ninja ZX-6R en excelente estado? Te ofrecemos una guía práctica con consejos esenciales y una lista de verificación para que tu moto siempre esté lista para la acción.</p>
+                        <img src="./recursos/Motos - Articles/enduro.jpg" alt="Guía de Mantenimiento Básico para Tu Kawasaki Ninja ZX-6R">
+                    </a>
+                </article>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <hr>
+        <section>
+            <h4><strong>Sobre el Blog</strong></h4>
+            <p>Este blog fue creado por <strong>Mateo Santiago Márquez</strong> en 2024. Todos los derechos reservados.</p>
+        </section>
+        <section>
+            <h4><strong>Contacto</strong></h4>
+            <ul>
+                <li><a href="mailto:msmarquez114@gmail.com">msmarquez114@gmail.com</a></li>
+                <li><a href="https://www.linkedin.com/in/mateo-santiago-marquez/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </section>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="control.js"></script>
+    
+    </body>
+</html>

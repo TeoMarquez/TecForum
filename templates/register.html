@@ -1,0 +1,107 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto TecForum</title>
+    <link rel="stylesheet" href="../../static/Styles/style.css">
+</head>
+<body>
+
+    <!--------------HEADER------------->
+    <section id="compost Header">  <!-- No utilizar esta id, es una manera de tener de manera ordenada tanto el header y la nav, como el separado del main-->
+        <header class="header">
+            <div class="header-logo">
+                <img src="../../static/Images/logo.jpg" alt="Logo de la escuela">
+            </div>
+            <h1 class="header-title">
+                <a href="{% url 'index' %}" class="header-link">Técnica N°3139 Gral Martin Miguel de Guemes</a>
+            </h1>
+            <div class="container_buttons">
+                <a href="{% url 'login' %}" class="buttons"><span>Iniciar Sesión</span></a>
+                <a href="{% url 'register' %}" class="buttons buttons_registro"><span>Registrarme</span></a>                
+            </div>
+        </header>
+        
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#" class="nav-link">HOME</a></li>
+                <li><a href="#" class="nav-link">COMUNICADOS</a></li>
+                <li><a href="#" class="nav-link">SOBRE NOSOTROS</a></li>
+            </ul>
+        </nav>
+
+        <div class="separator" id="separador de espacios semanticos"></div>
+
+    </section>
+
+    <!--------------MAIN------------->
+
+    <section id="compost Main"> <!-- No utilizar esta id, es una manera de tener de manera ordenada, tanto main, como el separado del footer -->
+        <!-----------FORMULARIO PART----------->
+        <main class="login">
+            <div class="login-box">
+                <h2>¡Registrate!</h2>
+                <p>Completa los campos para continuar</p>
+
+                <form method="post" action="{% url 'register' %}">
+                    {% csrf_token %}
+
+                    <label for="dni">DNI:</label>
+                    <input type="text" id="id_dni" name="dni" required>
+                    
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="id_nombre" name="nombre" required>
+                    
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="id_apellido" name="apellido" required>
+                    
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="id_correo" name="correo" required>
+                    
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="id_telefono" name="telefono" required>
+                    
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" id="id_contraseña" name="contraseña" required>
+                    
+                    <label for="confirmar_contrasena">Confirmar contraseña:</label>
+                    <input type="password" id="id_confirmar_contrasena" name="confirmar_contrasena" required>
+                    
+                    <div class="login-options">
+                        <div>
+                            <input class="login-checkbox inline" type="checkbox" id="remember-me">
+                            <label class="login-label inline" for="remember-me">Deseo recibir notificaciones por correo</label>
+                        </div>       
+                    </div>
+                    <button type="submit">Registrarme</button>
+                </form>
+                
+            </div>
+
+            <img src="{% static 'Images/car2.jpeg' %}" alt="Imagen de fondo">
+
+        </main>
+        <div class="separator" id="separador de espacios semanticos"></div>
+    </section>
+
+    <!-----------FOOTER PART----------->
+    <footer>
+        <div class="footer-info">
+            <div>
+                <p>Caseros Nº1615 Barrio Campo Casero, Salta</p>
+                <p>Teléfono: 03874749-4479</p>
+            </div>
+            <div>
+                <p>Email: Tecnica3139@gmail.com</p>
+                <p>Tecnica3139</p>
+            </div>
+        </div>
+        <div class="credits">
+            <p>Creado por ECAE - Derechos reservados por @ecae_24</p>
+        </div>
+    </footer>
+</body>
+</html>
