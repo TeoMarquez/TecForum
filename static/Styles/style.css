@@ -1,0 +1,321 @@
+body {
+    margin: 0;
+    min-height: fit-content;
+    font-family: Arial, sans-serif;
+    min-width: 1200px;
+    transition: 0.3s;
+}
+
+/* HEADER */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0c5149;
+        padding: 0 20px;
+        height: 70px;
+    }
+
+    .header-logo img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .header-title {
+        flex-grow: 1;
+        margin: 0 20px;
+        color: #2dcc70;
+        font-size: 20px;
+        text-shadow: 1px 1px 5px #000;
+    }
+
+    .header-title a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .header-title a:hover {
+        text-shadow: 0px 0px 14px #000;
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+
+    /* oa */
+   
+    .container_buttons {
+        width: 420px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 40px;
+    }
+    
+    .buttons {
+        margin: 0 20px;
+    }
+    
+    .buttons {
+        border: none;
+        background-image: linear-gradient(
+            150deg,
+            #179e71,
+            #1ab15c,
+            #c2e27f
+        );
+        border-radius: 8px;
+        color: #fff;
+        display: flex;
+        font-size: 18px;
+        padding: 4px;
+        cursor: pointer;
+        transition: 0.3s;
+        font-weight: 500;
+        text-decoration: none;
+    }
+    
+    .buttons span{
+        background-color: #111;
+        padding: 14px 28px;
+        border-radius: 6px;
+        transition: 0.3s;
+    
+    }
+    
+    .buttons:hover span {
+        background: none;
+    }
+    
+    .buttons:active {
+        transform: scale(0.9);
+    }
+
+    /* oa */
+    nav {
+        background-color: #2dcc70;
+        border-top: 4px solid #000;
+    }
+
+    .nav-list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 20px 24px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #000;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .nav-link:hover {
+        background-color: #179e71;
+        color: #fff;
+    }
+
+    .nav-link:active {
+        transform: scale(0.8);
+    }
+
+
+/* MAIN CONTENT */
+    main {
+        padding: 50px;
+        background-color: #000;
+    }
+
+    .login {
+        display: flex;
+        gap: 20px;
+    }
+
+    .login-box {
+        margin-left: 15%;
+        background-color: #f1e6f1;
+        padding: 50px;
+        width: 500px;
+    }
+
+    .login-box h2, .login-box p, .login-box label, .login-box input, .login-box button {
+        width: 100%;
+    }
+
+    .login-box h2 {
+        font-size: 27px;
+        font-weight: 800;
+        font-style: italic;
+        margin-bottom: 15px;
+    }
+
+    .login-box p {
+        font-size: 19px;
+        font-weight: 100;
+        margin-bottom: 20px;
+    }
+
+    .login-box label {
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 3px;
+    }
+
+    .login-box input {
+        padding: 10px;
+        border: 3px solid #000;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .login-options {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .forgot-password {
+        font-size: 12px;
+        text-decoration: none;
+        color: #1ab15c;
+        font-weight: 900;
+    }
+
+    .forgot-password:hover {
+        text-decoration: underline;
+        transform: scale(1.08);
+        transition: 0.3s;
+    }
+
+    .login-box button {
+        font-size: 18px;
+        font-weight: 600;
+        padding: 16px;
+        border-radius: 40px;
+        border: 2px solid #000;
+        background-color: #0DD4C0;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .login-box button:hover {
+        transform: scale(1.1);
+    }
+
+    .login-box button:active {
+        transform: scale(0.9);
+    }
+
+    .register-option {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+    }
+
+    .register-option p {
+        font-weight: 600;
+        text-decoration: underline;
+    }
+
+    .register-option a {
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #1ab15c;
+    }
+
+    .register-option a:hover {
+        text-decoration: underline;
+        transform: scale(1.08);
+        transition: 0.3s;
+    }
+
+    .login img {
+        width: 40%;
+        height: auto;
+    }
+
+    .login-box .login-checkbox {
+    width: 14px;
+}
+
+.login-options div {
+    margin-right: 34px;
+}
+
+.login-options a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #1ab15c;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+
+/* FOOTER */
+    footer {
+        background-color: #0c5149;
+        color: #ddd;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .separator{
+        height: 60px;
+        width: auto;
+        box-sizing: border-box;
+        background-color: #179e71;
+        border: 2.3px solid #000;
+    }
+
+    .footer-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 140px;
+        height: 230px;
+    }
+    
+    .footer-info div {
+        display: flex;
+        flex-direction: column;
+        margin-right: 5%;
+    }
+    
+    .footer-info p {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #fff;
+        font-weight: bold;
+        font-size: larger;
+        text-align: start;
+        text-decoration: underline;
+        cursor: pointer;
+        margin: 0;
+        margin-bottom: 20px; /* Espaciado entre los párrafos */
+    }
+
+    .credits {
+        height: 66px;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #0c5149;
+        border-top: 1px solid #eee6;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    
+    .credits p {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0;
+        color: #ddd;
+        margin-right: 50px;
+        font-size: 20px;
+    }
+
+    
