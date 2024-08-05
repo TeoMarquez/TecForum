@@ -1,0 +1,39 @@
+Estructura app
+
+
+TecForum/
+│
+├── manage.py
+├── requirements.txt
+├── TecForum/
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+│
+├── db/
+│   └── init.sql
+│
+├── static/
+│   ├── Images/
+│   ├── Scripts/
+│   └── Styles/
+│
+├── templates/
+│   ├── base.html
+│   ├── index.html
+│   ├── about.html
+│   └── my_app/
+│       ├── home.html
+│       ├── detail.html
+│
+└── my_app/
+    ├── __init__.py
+    ├── admin.py
+    ├── apps.py
+    ├── models.py
+    ├── tests.py
+    ├── views.py
+    └── migrations/
+        └── __init__.py
