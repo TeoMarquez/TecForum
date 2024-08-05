@@ -1,0 +1,3 @@
+@echo off
+echo Desactivando entorno virtual...
+deactivate
