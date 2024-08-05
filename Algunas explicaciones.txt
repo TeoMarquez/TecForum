@@ -1,0 +1,42 @@
+Este es una guia mas detallada acerca de como funciona la app.
+
+# 1er paso 
+
+Para empezar, la primera vez que descargues este repositorio ejeecuta setup.bat. Esto lo que hará es que en la carpeta en la que te encontras cree un entorno virtual python (para que no se te rompa ninguna dependencia por mas que en tu pc tengas otro python, otro django, otro sql, etc.)
+
+# 2do paso
+
+Puedes utilizar los comandos bash que dejé en el readme principal o hacer lo que yo recomiendo, abrirlo desde cmd o consola de vsc. Debes ejecutar levantar_entorno.bat para poder utilizar la app, este te activará la venv y iniciará la app django.
+
+# 3er paso
+
+Fijate en la carpeta llamada TecForum las credenciales de tu db porque puede que no sean iguales a las mias (muy posiblemente)
+
+# 4to paso
+
+ya que esté configurado todo puede utilizar la app accediendo a:
+
+http://127.0.0.1:8000/
+
+!!! IMPORTANTE !!!
+
+Si utilizas mysql o phpmyadmin (xampp) si o si tenes que tener creado la base de datos 'tecforum', creala y dejala vacia, ya que la app se encarga de llenarla con los modelos. En caso de que no tengas ninguno de los dos, la propia app funciona con esa base de datos, asi que puedes 'testearla' sin ello, aunque será realmente incomodo, porque no hay manera de visualizar la base de datos, por eso recomiendo xampp.
+
+
+// Algunas aclaraciones
+
+Hasta ahora para probar dejé un index random. Ignoralo, fuera de eso el listado de templates ya establecidos por si quieres probar algo son:
+
+/oa
+/success
+/login
+/register
+/index o simplemente /
+
+y si no está dentro de eso te mandará al codigo de error
+
+por fines de testeo decidí dejar ciertos indicativos como los messages error y los print que se veran en la consola django, por favor no los tengan en cuenta a la hora de considerarlo como una vulnerabilidad (ya que cuando esto esté testeado, naturalmente voy a cambiarlo por hash codigos de errores de accesos de superusuario y demas)
+
+todos los codigos funcionan, si te llegas a sentir mas comodo teniendo cmds abiertos por todos lados, simplemente copia y pega los codigos algunos te pueden llenar la memoria si no los tienes en cuenta, ya que se cierran las pestañas, asi que si los usas, no olvides de cerrar_entorno.bat cuando termines de trabajar)
+
+dejé tanto un esquema de archivos como una base de datos por si te sirve de algo.
